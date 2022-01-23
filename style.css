@@ -39,17 +39,26 @@ body{
     box-shadow: 10px -3px 100px 5px rgba(7, 7, 7, 0.26);
 }
 
-.card-imagem{
-    position: relative;
-    margin: 7.0%;
-    width: 87%;
-    border-radius: 13px;
+figure, figure img{
+    width: 280px;
+    height: 280px;
+    
+    
 }
 
-.card-imagem:hover{
-    position: absolute;
+.figura{
+    background-image: url(/images/image-equilibrium.jpg);
+    background-size:cover;
+    position:static;
+    transform: scale(1.0);
+
+}
+
+.figura:hover {
+    background-image: url(/images/icon-view.svg);
+    background-size:cover;
     cursor: pointer;
-    background:url(images/icon-view.svg);
+    position:relative;
 }
 
 .card-titulo{
