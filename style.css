@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --darkblue-main: hsl(217, 54%, 11%);
+    --darkblue-card: hsl(216, 50%, 16%);
+    --darkblue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: var(--darkblue-main);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.principal{
+    display: block;
+}
+
+.card{
+    width: 300px;
+    margin: 10em auto;
+    pad: 0.5em;
+    background-color: var(--darkblue-card);
+    border-radius: 0.5em;
+    box-shadow: 10px -3px 100px 5px rgba(7, 7, 7, 0.26);
+}
+
+.card-imagem{
+    margin: 7.0%;
+    width: 87%;
+    border-radius: 13px;
+}
+
+.card-titulo{
+    padding: 20px;
+    color:var(--white);
+    font-weight: 600px;
+}
+
+.card-paragrafo{
+    padding-left: 20px;
+    font-size: 16px;
+    padding-right: 10px;
+    color:var(--softblue);
+    font-weight: 600px;
+}
+
+.card-propriedades{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.card-propriedades-icon-1{
+    padding-right: 8px;
+}
+
+.card-propriedades-icon-2{
+    padding-right: 8px;
+}
+
+.card-propriedades-pontos{
+    color: var(--cyan);
+    font-size: 14px;
+}
+
+.card-propriedades-tempo{
+    color:var(--softblue);
+    font-size: 16px;
+}
+
+.card-creador{
+    border-top: 0.2px solid var(--darkblue-line);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-self: baseline;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card-image-avatar{
+    width: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 120px;
+    border-color: var(--white);
+}
+
+.card-criador{
+    padding-right: 5px;
+    padding-left: 7px;
+    color: var(--softblue);
+    font-size: 14px;
+}
+
+.card-nome{
+    color:var(--white);
+    font-size: 14px;
+}
+
+@media(max-width: 375px){
+    .card{
+        margin:0 auto;
+        width:auto;
+    }
+}
+
