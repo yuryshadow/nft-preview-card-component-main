@@ -40,15 +40,27 @@ body{
 }
 
 .card-imagem{
+    position: relative;
     margin: 7.0%;
     width: 87%;
     border-radius: 13px;
+}
+
+.card-imagem:hover{
+    position: absolute;
+    cursor: pointer;
+    background:url(images/icon-view.svg);
 }
 
 .card-titulo{
     padding: 20px;
     color:var(--white);
     font-weight: 600px;
+}
+
+.card-titulo:hover{
+    cursor: pointer;
+    color:var(--cyan);
 }
 
 .card-paragrafo{
@@ -113,6 +125,11 @@ body{
 .card-nome{
     color:var(--white);
     font-size: 14px;
+}
+
+.card-nome:hover{
+    cursor: pointer;
+    color:var(--cyan);
 }
 
 @media(max-width: 375px){
