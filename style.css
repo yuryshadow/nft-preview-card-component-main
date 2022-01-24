@@ -42,23 +42,20 @@ body{
 figure, figure img{
     width: 280px;
     height: 280px;
-    
-    
 }
 
 .figura{
     background-image: url(/images/image-equilibrium.jpg);
+    margin: 10px;
+    border-radius: 15px;
     background-size:cover;
-    position:static;
-    transform: scale(1.0);
-
+    cursor: pointer;
 }
 
 .figura:hover {
     background-image: url(/images/icon-view.svg);
     background-size:cover;
-    cursor: pointer;
-    position:relative;
+    
 }
 
 .card-titulo{
